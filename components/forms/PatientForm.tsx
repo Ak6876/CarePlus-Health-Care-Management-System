@@ -51,6 +51,7 @@ const PatientForm = () => {
         } catch (error) {
             console.log(error)
         }
+        setisLoading(false);
     }
 
     return (
