@@ -22,10 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={cn('min-h-screen bg-dark-300 font-sans antialiased', fontSans.variable)}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={cn('min-h-screen bg-dark-300 font-sans antialiased', fontSans.variable)}   >
         <ThemeProvider
-          attribute="class"
+          attribute={'class' || 'style'}
           defaultTheme="dark"
           >
             {children}

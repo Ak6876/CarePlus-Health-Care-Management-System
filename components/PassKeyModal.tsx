@@ -107,7 +107,7 @@ const PassKeyModal = () => {
                     <AlertDialogAction onClick={(e)=>validatePasskey(e)}
                         className="shad-primary-btn w-full"
                         >
-                        Edit Admin Passkey
+                        Enter Admin Passkey
                     </AlertDialogAction>
                 </AlertDialogFooter>
             </AlertDialogContent>
