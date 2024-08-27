@@ -12,8 +12,8 @@ const fontSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "CarePlus",
-  description: "A Healthcare Management System",
+  title: "CarePulse",
+  description: "A healthcare management system, where you can book your appointment now with your doctor faster and more securely",
 };
 
 export default function RootLayout({
