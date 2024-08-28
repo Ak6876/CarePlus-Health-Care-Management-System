@@ -19,9 +19,8 @@ export const columns: ColumnDef<Appointment>[] = [
   {
     accessorKey:"patient",
     header : 'Patient',
-    cell: ({row}) =>{console.log(row.original.patient.name); 
-      <p className="text-14-medium">I'm Here{row.original.patient.name}</p> 
-    },
+    cell: ({row}) => <p className="text-14-medium">{row.original.patient.name}</p> 
+    
   },  
   {
     accessorKey: "status",
