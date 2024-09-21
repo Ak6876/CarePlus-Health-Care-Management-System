@@ -3,30 +3,40 @@ import PassKeyModal from "@/components/PassKeyModal";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home({ searchParams } : SearchParamProps) {
+export default function Home({ searchParams }: SearchParamProps) {
   const isAdmin = searchParams.admin === 'true';
 
   return (
     <div className="flex h-screen max-h-screen">
-      {isAdmin && <PassKeyModal/>}
-      
+      {isAdmin && <PassKeyModal />}
+
       <section className="remove-scrollbar container">
         <div className="sub-container max-w-[496px]">
 
           <Image
             src="/assets/icons/logo-full.svg"
             height={1000}
-            width = {1000}
+            width={1000}
             alt="patient"
             className="mb-12 h-10 w-fit"
           />
 
-          <PatientForm/>
+          <PatientForm />
 
           <div className="text-14-regular mt-15 flex justify-between">
 
+            <Link href='https://github.com/Ak6876/CarePlus-Health-Care-Management-System.git'>
+              <Image
+                src="/assets/icons/github-mark.svg"
+                height={25}
+                width={25}
+                alt="GitHub"
+                className="rounded-full border-zinc-700 bg-dark-600"
+              />
+            </Link>
+
             <p className="justify-items-end text-dark-600 xl:text-left">
-              &#169; 2024 CarePlus
+              &#169; 2024 CarePulse
             </p>
 
             <Link href='/?admin=true' className="text-green-500">
@@ -41,7 +51,7 @@ export default function Home({ searchParams } : SearchParamProps) {
         height={1000}
         width={1000}
         alt="patient"
-        className="side-img max-w-[50%]" 
+        className="side-img max-w-[50%]"
       />
     </div>
   );
